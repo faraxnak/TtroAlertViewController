@@ -1,0 +1,1676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030D441EF7561E9AEEF329E3C0434D2B /* APCustomBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110C216BE8C2BAF1CE08E9DFDEF88E86 /* APCustomBlurView.swift */; };
+		0624E8256DEB0510CB869DB3CE092381 /* Pods-TtroAlertViewControllerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0733BBDA49091B24C898CE36E166D13 /* Pods-TtroAlertViewControllerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0768890904945343C17C77E9D5AE4D3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		0DC98CD86D69D7E824DC8A52602CE731 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		0DD46A9876D07B79D473C6D3FC4946D2 /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F03EC910C4A924E9D0B80BABBD497B81 /* NSArray+PureLayout.m */; };
+		0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807D8B0E6F29C19627A5E83B22601D08 /* DimensionAttribute.swift */; };
+		11BD975149E27776BBCB6F759B77B192 /* Pods-TtroAlertViewControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D343ACA88C43196FE2028ED77E8E47 /* Pods-TtroAlertViewControllerTests-dummy.m */; };
+		16B927A12AD2B23A3B7C5D10C022021B /* Pods-TtroAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28362771B714935686CCAFEE0AAF03D4 /* Pods-TtroAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1852FB3D090CE6BC4E82D5E6C4B30592 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5769A739C1BC09C0A99A205533473B46 /* UIKit.framework */; };
+		1C3BF79F0332D9CD83DE6E2B37941C6D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C59926DCEF77984C0936B7EF4C7E86A /* UIColorExtension.swift */; };
+		1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFF802CE58F570F2C0C79A1D14B17DB /* Item.swift */; };
+		1DBA4C61D577F1338A1E3B83F5E919B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		1EFA38A9B401515DEA501D1CDC0A8EB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59BC451670B87689208E7C29259314D7 /* Extensions.swift */; };
+		1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A9AB3C56125A54104528B895AF50F /* PositionAttribute+AppKit.swift */; };
+		238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFA1E23324DF9B3EF08555A06DF0EF77 /* EasyPeasy-dummy.m */; };
+		2422F1C5ED696FBFE3C9CCC92F23A8E3 /* SwiftyButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D849431E4476C0689CC7B592153613 /* SwiftyButton.framework */; };
+		31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE663E4B5C2A5D515F27E78F56619B3C /* CompoundAttribute.swift */; };
+		32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A686346CE2E9EC65BA60FB32D4E57F9B /* EasyPeasy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B82A4666AC0783C10B5482F550525 /* Attribute.swift */; };
+		35550F0F2D3072F048821AA8567F7C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5769A739C1BC09C0A99A205533473B46 /* UIKit.framework */; };
+		42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE82743A329FC0E4CD0AD38ABE5DFF5 /* PositionAttribute.swift */; };
+		44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD48D6CE3F5F90CA57A87AE38F246E3 /* Constant.swift */; };
+		48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2556DFDDEE935120FC39A07BB4DF3EA /* UIView+Easy.swift */; };
+		528852BBA10BDD4CF993006141B60763 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF8ED924A9E56C1E60671F9CF3272BF /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55B877E31E2CC41C2E0DC6F73D0451B3 /* SwiftyButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2AF3219A55DFF79A833A6CD71A6705 /* SwiftyButton-dummy.m */; };
+		55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15177EFDC72809A153511C0ED7C7391B /* Item+AppKit.swift */; };
+		584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B9CD36C3FDB6263A5719197040554 /* DimensionAttribute+UIKit.swift */; };
+		5AC48C172934C77A2C2F6B8E9186CDB2 /* TtroLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96A48B8346C3D5B692FAB02D77B1EC6 /* TtroLabel.swift */; };
+		61A5DBA8B391FC6F8FCB55A6DF698272 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA92B83CD3D32B0FD5DF2A7CE3143CF /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		637AECF468E9AFA67663A6FE12D670B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		648EFEC4186BA6BA3818656A4969416A /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD98FFF43FD4ADAC8415C39FE38D8877 /* ALView+PureLayout.m */; };
+		6AFB4E22A96B1FD008C5720D8E6EAEED /* SwiftyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D04B24893CA482755C00E4B6C4EE47F /* SwiftyButton.swift */; };
+		7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26715E4823430C20A5D2C3B5D71294B1 /* ReferenceAttribute.swift */; };
+		883A058B9815B3CFD89DDFDB1CAA0DA2 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 24907F57042E53F9BDAB6437FFECEDEF /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CB4FD30B0E4C10C3449F7F0263D1537 /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC98C9B59DAC5F133333539ED3A575E /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F2729EF0F4119520142499987156E /* UILayoutGuide+Easy.swift */; };
+		8E9360C02A77DCA0D1F9D8415CF059AF /* SwiftyCustomContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1F8CAB187828CEB42E110B2DB0B98 /* SwiftyCustomContentButton.swift */; };
+		9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = F991D62C0A9AC9BB8E05DD809A8F7775 /* Node.swift */; };
+		9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E978873855136B75535D8A5439F8F12 /* Priority.swift */; };
+		A3F6E4C54884F1E28AF85795ACB1FB64 /* SwiftyButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA8CE1B502B7AE94D67D33F64750272B /* SwiftyButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5F56CCEAD85BF57AF7D00B2B34F1729 /* HEXColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A0344E2AC9A91ECB47535FE07773AAF /* HEXColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61A54646708C458650EC61D0B0D6512 /* SwiftyButton+ResizableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA63E48018BF4194BE50FC3687E5D63 /* SwiftyButton+ResizableImage.swift */; };
+		A7CC295E4383A5F0A07EA42CAE243276 /* PayWandBasicElements-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D9C2BFFF5C946A03AFDCDD24867C7E6 /* PayWandBasicElements-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE21AF5ABE52F532463CBFAA343881EA /* Pods-TtroAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D8DB1557F772C2D3EB5CDA572568AB /* Pods-TtroAlertViewController-dummy.m */; };
+		B0B37F76060CCD8CB05A9958CBB9C143 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = AB751A40F5BC066359E4C00068721787 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B634055EF1E73A27E3C56BCC699553A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		B7556966881E82AA8A9CFA621017A86A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		BB2A8CB1C1E8A95904D20134E3154191 /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D2752314D6FE2CF4CAE1525C486B4FF /* EasyPeasy.framework */; };
+		BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480C84A3C99FB88F14335BB5A067A42 /* DimensionAttribute+AppKit.swift */; };
+		BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EE8B61A93DE06D0C28D56D45E16A30 /* Item+UIKit.swift */; };
+		C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10A34F82B36DE560A8406B65BF6D99C /* NSLayoutGuide+Easy.swift */; };
+		C7604258E5E7FD6C1659545514F34E85 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = DD05720258997143EC5AADDD36F7CE0F /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C860DF1DA2767DC93B882EED79A30518 /* UIColor_Hex_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B573659E5B4AC4A7997B196D4A7D209 /* UIColor_Hex_Swift-dummy.m */; };
+		C95C8312DBA615BA67B27518E9F5A0A5 /* PayWandBasicElements-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A51357AB99D1634CF246A54685C6FF69 /* PayWandBasicElements-dummy.m */; };
+		CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0423AEBBBD232868ACD36843C7AE957F /* PositionAttribute+UIKit.swift */; };
+		D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0529F48124D42CDBDD7DC068ACE8D7BD /* Context.swift */; };
+		D3BA3D1B8D62D17B6F721B8D550570D9 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448313FCB0C93ED5064E0ABF8479B3A0 /* PureLayout.framework */; };
+		D83409947752D7FCDAAE8B5F7734875D /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 467951529B77A97B65EE60BA4ACF4345 /* PureLayout-dummy.m */; };
+		DDA435B3FE27F50C8F7D2FB5899B324E /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CBFD899F5B265D781CFD7ED40C84F5 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E02861D212636F4FE44250C89EB0F20A /* TtroButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3866CD99D41D82CDF70F717592484160 /* TtroButton.swift */; };
+		E8988848228638F22718E81F898BF7AE /* TtroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CDB6FAD52C8621726033BB02FF83 /* TtroTextField.swift */; };
+		EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */; };
+		EE3F7936D0001C21F6125A3A0D1F33FF /* TtroDigitEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809AA18BFD030BF9431BD924D9A23DEF /* TtroDigitEntry.swift */; };
+		F12440C59BCC14AB45EEE2651323876C /* UIColor_Hex_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FDA84DB2E410BAEBB72A21A25DEF281 /* UIColor_Hex_Swift.framework */; };
+		F39915BF9B78F9A7F550FC6775A4BD4A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FD05C2618272817579DE214A194A6D49 /* NSLayoutConstraint+PureLayout.m */; };
+		FB45CA1317275242EAE843BAB59D0F68 /* UIColor_Hex_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3D8CC23C3AC5779470CCFCC25BF7ED /* UIColor_Hex_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA811D27DA03F4841B168A1A43DB290 /* NSView+Easy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12209939F82AFC6E53A18F9850C4D1CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		180DF9E2937A646834F97E753D71B1BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		451ABDA644722E8E6DB24F6B0FD4F623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		4D9C83221326E47731C4D9BE9C82C8CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		79D05CA56F3371BF2DA41F0E991FC7B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4253F87176115CA05D9012798046971;
+			remoteInfo = PureLayout;
+		};
+		881CFEA554470D7831CB81C3B275B634 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		8F37468D736D124ACC8CB10737DC5D9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		9F76A97E260354833FD49A4637DD4AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		A98FCA6766DE0951274DFD53FF3E559D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60DAEEB1932B65A1B49F4B4E7B0C0048;
+			remoteInfo = PayWandBasicElements;
+		};
+		B0F2004DC38B417876321C20894E5512 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		C7906B8AD5A90A941DF42BD072DD3BF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+		E3305A29C1E0D6C563F3E476BF19C1D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1259A79E9C0160F09B8C80FBE4FA91D0;
+			remoteInfo = SwiftyButton;
+		};
+		E8F2235297148783808CD5EFCCDB9754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5221EA08C01208C608AC6ECB17B9F2E;
+			remoteInfo = EasyPeasy;
+		};
+		F3340325E56083A14FE8A4A9EBD0997D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76946471F39266E99B8704680A1D75FB;
+			remoteInfo = UIColor_Hex_Swift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0423AEBBBD232868ACD36843C7AE957F /* PositionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+UIKit.swift"; path = "EasyPeasy/PositionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		0529F48124D42CDBDD7DC068ACE8D7BD /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = EasyPeasy/Context.swift; sourceTree = "<group>"; };
+		05CBFD899F5B265D781CFD7ED40C84F5 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		0FAB186620CD95E51C144C6167AC0BA5 /* Pods-TtroAlertViewControllerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroAlertViewControllerTests-frameworks.sh"; sourceTree = "<group>"; };
+		110C216BE8C2BAF1CE08E9DFDEF88E86 /* APCustomBlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APCustomBlurView.swift; sourceTree = "<group>"; };
+		15177EFDC72809A153511C0ED7C7391B /* Item+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+AppKit.swift"; path = "EasyPeasy/Item+AppKit.swift"; sourceTree = "<group>"; };
+		19D849431E4476C0689CC7B592153613 /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B176D939831D31D7D7200F07C7236D8 /* Pods-TtroAlertViewController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroAlertViewController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1C59926DCEF77984C0936B7EF4C7E86A /* UIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = HEXColor/UIColorExtension.swift; sourceTree = "<group>"; };
+		1DF8ED924A9E56C1E60671F9CF3272BF /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
+		2018E3CB574A73A60BF79440D6839708 /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyPeasy.framework; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24907F57042E53F9BDAB6437FFECEDEF /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		26715E4823430C20A5D2C3B5D71294B1 /* ReferenceAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReferenceAttribute.swift; path = EasyPeasy/ReferenceAttribute.swift; sourceTree = "<group>"; };
+		2781152E1ACFC46B481A2F99FCCE0A50 /* EasyPeasy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-prefix.pch"; sourceTree = "<group>"; };
+		280B580D66F6143DFC44E6FCB731B314 /* Pods-TtroAlertViewControllerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TtroAlertViewControllerTests.modulemap"; sourceTree = "<group>"; };
+		28362771B714935686CCAFEE0AAF03D4 /* Pods-TtroAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroAlertViewController-umbrella.h"; sourceTree = "<group>"; };
+		2ABF0F51FEDD5BB63AB8DF7825AF4C09 /* PayWandBasicElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PayWandBasicElements.framework; path = PayWandBasicElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CA63E48018BF4194BE50FC3687E5D63 /* SwiftyButton+ResizableImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftyButton+ResizableImage.swift"; path = "SwiftyButton/SwiftyButton+ResizableImage.swift"; sourceTree = "<group>"; };
+		31E1F8CAB187828CEB42E110B2DB0B98 /* SwiftyCustomContentButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCustomContentButton.swift; path = SwiftyButton/SwiftyCustomContentButton.swift; sourceTree = "<group>"; };
+		342F0ED1B0F478B101F42188EB7C25AF /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
+		3866CD99D41D82CDF70F717592484160 /* TtroButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroButton.swift; sourceTree = "<group>"; };
+		3D04B24893CA482755C00E4B6C4EE47F /* SwiftyButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyButton.swift; path = SwiftyButton/SwiftyButton.swift; sourceTree = "<group>"; };
+		3F51BF9A052E540C36D235DC91DEB53B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		448313FCB0C93ED5064E0ABF8479B3A0 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		467951529B77A97B65EE60BA4ACF4345 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		47812F9E3B8C84014589432435389C7B /* SwiftyButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyButton.framework; path = SwiftyButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0344E2AC9A91ECB47535FE07773AAF /* HEXColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HEXColor.h; path = HEXColor/HEXColor.h; sourceTree = "<group>"; };
+		4B179E7B67438055435C28AA1F806EFB /* EasyPeasy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyPeasy.modulemap; sourceTree = "<group>"; };
+		4E978873855136B75535D8A5439F8F12 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = EasyPeasy/Priority.swift; sourceTree = "<group>"; };
+		500CC251DE7FF572AF26266CAB5E17CA /* Pods-TtroAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TtroAlertViewController.modulemap"; sourceTree = "<group>"; };
+		51A90F8E215976EDB5B4BBD2859A1BED /* Pods-TtroAlertViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroAlertViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5769A739C1BC09C0A99A205533473B46 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		59BC451670B87689208E7C29259314D7 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5D9C2BFFF5C946A03AFDCDD24867C7E6 /* PayWandBasicElements-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-umbrella.h"; sourceTree = "<group>"; };
+		5FD48D6CE3F5F90CA57A87AE38F246E3 /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
+		6480C84A3C99FB88F14335BB5A067A42 /* DimensionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+AppKit.swift"; path = "EasyPeasy/DimensionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		678DBC5D9B77311B5D772684CD0C26F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6807FB1E603C8709EA1C38F5D88562A1 /* Pods-TtroAlertViewController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroAlertViewController-acknowledgements.plist"; sourceTree = "<group>"; };
+		6BB27BC7ED6C53FB340E5077D348D211 /* SwiftyButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyButton.modulemap; sourceTree = "<group>"; };
+		6BFF802CE58F570F2C0C79A1D14B17DB /* Item.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Item.swift; path = EasyPeasy/Item.swift; sourceTree = "<group>"; };
+		6CA15E63449661738D54A3A320D44030 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UIColor_Hex_Swift.framework; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB7775EC9FDEA67AC32F7D83EE36160 /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC98C9B59DAC5F133333539ED3A575E /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
+		7A9B9CD36C3FDB6263A5719197040554 /* DimensionAttribute+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DimensionAttribute+UIKit.swift"; path = "EasyPeasy/DimensionAttribute+UIKit.swift"; sourceTree = "<group>"; };
+		7D199E8630B497C3A6F85870C62D1E91 /* UIColor_Hex_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UIColor_Hex_Swift.modulemap; sourceTree = "<group>"; };
+		7FDA84DB2E410BAEBB72A21A25DEF281 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_Hex_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyButton.xcconfig; sourceTree = "<group>"; };
+		807D8B0E6F29C19627A5E83B22601D08 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
+		809AA18BFD030BF9431BD924D9A23DEF /* TtroDigitEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroDigitEntry.swift; sourceTree = "<group>"; };
+		834A9AB3C56125A54104528B895AF50F /* PositionAttribute+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PositionAttribute+AppKit.swift"; path = "EasyPeasy/PositionAttribute+AppKit.swift"; sourceTree = "<group>"; };
+		846E1FE6FCF507659BE24F18DFCAD5C2 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
+		86898DDF36FE87D6C1810EDF8F4F494C /* Pods-TtroAlertViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroAlertViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		8B573659E5B4AC4A7997B196D4A7D209 /* UIColor_Hex_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor_Hex_Swift-dummy.m"; sourceTree = "<group>"; };
+		8C7E3F82A8FA9F07699FBA0FE3D76748 /* Pods-TtroAlertViewControllerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroAlertViewControllerTests-resources.sh"; sourceTree = "<group>"; };
+		8D2752314D6FE2CF4CAE1525C486B4FF /* EasyPeasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyPeasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E3D8CC23C3AC5779470CCFCC25BF7ED /* UIColor_Hex_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-umbrella.h"; sourceTree = "<group>"; };
+		8E5D4651A6F42DB921211F7D58E7CE29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94D8DB1557F772C2D3EB5CDA572568AB /* Pods-TtroAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		9A32CDB6FAD52C8621726033BB02FF83 /* TtroTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroTextField.swift; sourceTree = "<group>"; };
+		9A9B82A4666AC0783C10B5482F550525 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
+		9AEAFA1B5D5E0940CB4A2F13A545D602 /* Pods-TtroAlertViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroAlertViewController.release.xcconfig"; sourceTree = "<group>"; };
+		9D9FA2F356E30EEB4C4F98E4388320FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0733BBDA49091B24C898CE36E166D13 /* Pods-TtroAlertViewControllerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TtroAlertViewControllerTests-umbrella.h"; sourceTree = "<group>"; };
+		A51357AB99D1634CF246A54685C6FF69 /* PayWandBasicElements-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PayWandBasicElements-dummy.m"; sourceTree = "<group>"; };
+		A686346CE2E9EC65BA60FB32D4E57F9B /* EasyPeasy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyPeasy-umbrella.h"; sourceTree = "<group>"; };
+		AB2AF3219A55DFF79A833A6CD71A6705 /* SwiftyButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyButton-dummy.m"; sourceTree = "<group>"; };
+		AB751A40F5BC066359E4C00068721787 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		ABA811D27DA03F4841B168A1A43DB290 /* NSView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSView+Easy.swift"; path = "EasyPeasy/NSView+Easy.swift"; sourceTree = "<group>"; };
+		AEA92B83CD3D32B0FD5DF2A7CE3143CF /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
+		AEBF92BC71693E6E968F5D20E6139470 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFE75DC4AB00547BC2BF63FBBB2F8A6D /* Pods-TtroAlertViewControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TtroAlertViewControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B11E6B31A3C3C00BF6D2F3AE2B21FCFB /* SwiftyButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-prefix.pch"; sourceTree = "<group>"; };
+		B898D22B0842949DC5EA4263DB54C6DC /* PayWandBasicElements.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PayWandBasicElements.xcconfig; sourceTree = "<group>"; };
+		B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BA03683C10C1108857BB01B3DAE610AB /* Pods_TtroAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TtroAlertViewController.framework; path = "Pods-TtroAlertViewController.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCAC712C699B6A12E54C83927EB1C89B /* Pods_TtroAlertViewControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TtroAlertViewControllerTests.framework; path = "Pods-TtroAlertViewControllerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEBBF45DB30F8AE72F65C885AE25E62A /* Pods-TtroAlertViewController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TtroAlertViewController-resources.sh"; sourceTree = "<group>"; };
+		C10A34F82B36DE560A8406B65BF6D99C /* NSLayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutGuide+Easy.swift"; path = "EasyPeasy/NSLayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		C2EE8B61A93DE06D0C28D56D45E16A30 /* Item+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Item+UIKit.swift"; path = "EasyPeasy/Item+UIKit.swift"; sourceTree = "<group>"; };
+		C47E16112794C69B6A84566CAABF2C65 /* Pods-TtroAlertViewControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TtroAlertViewControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C87F2729EF0F4119520142499987156E /* UILayoutGuide+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutGuide+Easy.swift"; path = "EasyPeasy/UILayoutGuide+Easy.swift"; sourceTree = "<group>"; };
+		C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UIColor_Hex_Swift.xcconfig; sourceTree = "<group>"; };
+		CA8CE1B502B7AE94D67D33F64750272B /* SwiftyButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyButton-umbrella.h"; sourceTree = "<group>"; };
+		CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		CE663E4B5C2A5D515F27E78F56619B3C /* CompoundAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundAttribute.swift; path = EasyPeasy/CompoundAttribute.swift; sourceTree = "<group>"; };
+		D6B5F0CBABE45F9938237807C3AF1F54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.xcconfig; sourceTree = "<group>"; };
+		DD05720258997143EC5AADDD36F7CE0F /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		E257970444429EED61D212C8C02C3886 /* PayWandBasicElements-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PayWandBasicElements-prefix.pch"; sourceTree = "<group>"; };
+		E3D343ACA88C43196FE2028ED77E8E47 /* Pods-TtroAlertViewControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TtroAlertViewControllerTests-dummy.m"; sourceTree = "<group>"; };
+		F03EC910C4A924E9D0B80BABBD497B81 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		F2556DFDDEE935120FC39A07BB4DF3EA /* UIView+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Easy.swift"; path = "EasyPeasy/UIView+Easy.swift"; sourceTree = "<group>"; };
+		F2BACCFEEDFFF95F61D825C0D133F6E9 /* PayWandBasicElements.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PayWandBasicElements.modulemap; sourceTree = "<group>"; };
+		F42E79CAA0E1ADE6D2548D549A91B7A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F63CB751DD732B68EBB3529B36079047 /* Pods-TtroAlertViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TtroAlertViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F96A48B8346C3D5B692FAB02D77B1EC6 /* TtroLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TtroLabel.swift; sourceTree = "<group>"; };
+		F991D62C0A9AC9BB8E05DD809A8F7775 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = EasyPeasy/Node.swift; sourceTree = "<group>"; };
+		FCE82743A329FC0E4CD0AD38ABE5DFF5 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
+		FD05C2618272817579DE214A194A6D49 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		FD98FFF43FD4ADAC8415C39FE38D8877 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		FE710006D2CD214E2AB5DCEFEB4107AC /* UIColor_Hex_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor_Hex_Swift-prefix.pch"; sourceTree = "<group>"; };
+		FFA1E23324DF9B3EF08555A06DF0EF77 /* EasyPeasy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyPeasy-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D150C2F92CB829E44E4DF6B6B4F170D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B634055EF1E73A27E3C56BCC699553A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E64FA70E9DF60DB7FCCA890CCF0879 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637AECF468E9AFA67663A6FE12D670B7 /* Foundation.framework in Frameworks */,
+				35550F0F2D3072F048821AA8567F7C14 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D939A1EB1BEFBABFB75E708B18E7236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DC98CD86D69D7E824DC8A52602CE731 /* Foundation.framework in Frameworks */,
+				D3BA3D1B8D62D17B6F721B8D550570D9 /* PureLayout.framework in Frameworks */,
+				1852FB3D090CE6BC4E82D5E6C4B30592 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		707AC0B1B4461CE6629737959E76E959 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2A8CB1C1E8A95904D20134E3154191 /* EasyPeasy.framework in Frameworks */,
+				B7556966881E82AA8A9CFA621017A86A /* Foundation.framework in Frameworks */,
+				2422F1C5ED696FBFE3C9CCC92F23A8E3 /* SwiftyButton.framework in Frameworks */,
+				F12440C59BCC14AB45EEE2651323876C /* UIColor_Hex_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		988FD6C0DD546C6385D6558B885773F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0768890904945343C17C77E9D5AE4D3A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8335EFFB3B85CB7EC9F5E1324A5B53D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBA4C61D577F1338A1E3B83F5E919B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC24EEEE83FF68090FE613948B95942A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDB236F3139700DAA77B89630C40382F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A996663B77C7D30FEA4F1D920652F06 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8900F985FB236D35F5A528AC23453 /* Foundation.framework */,
+				5769A739C1BC09C0A99A205533473B46 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1C83B8720AE6F11243B90960AABC8564 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0DB240206C9FB428D57E7B465498115 /* PayWandBasicElements */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		32FC4C9B61F9F6A41A03752AAF0CDFC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D2752314D6FE2CF4CAE1525C486B4FF /* EasyPeasy.framework */,
+				448313FCB0C93ED5064E0ABF8479B3A0 /* PureLayout.framework */,
+				19D849431E4476C0689CC7B592153613 /* SwiftyButton.framework */,
+				7FDA84DB2E410BAEBB72A21A25DEF281 /* UIColor_Hex_Swift.framework */,
+				1A996663B77C7D30FEA4F1D920652F06 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40884F90171C2BD90EA7DE243C10EF51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2018E3CB574A73A60BF79440D6839708 /* EasyPeasy.framework */,
+				2ABF0F51FEDD5BB63AB8DF7825AF4C09 /* PayWandBasicElements.framework */,
+				BA03683C10C1108857BB01B3DAE610AB /* Pods_TtroAlertViewController.framework */,
+				BCAC712C699B6A12E54C83927EB1C89B /* Pods_TtroAlertViewControllerTests.framework */,
+				6DB7775EC9FDEA67AC32F7D83EE36160 /* PureLayout.framework */,
+				47812F9E3B8C84014589432435389C7B /* SwiftyButton.framework */,
+				6CA15E63449661738D54A3A320D44030 /* UIColor_Hex_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6164D154385FDCF929F4D6370CEEBBB1 /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				AB751A40F5BC066359E4C00068721787 /* ALView+PureLayout.h */,
+				FD98FFF43FD4ADAC8415C39FE38D8877 /* ALView+PureLayout.m */,
+				05CBFD899F5B265D781CFD7ED40C84F5 /* NSArray+PureLayout.h */,
+				F03EC910C4A924E9D0B80BABBD497B81 /* NSArray+PureLayout.m */,
+				24907F57042E53F9BDAB6437FFECEDEF /* NSLayoutConstraint+PureLayout.h */,
+				FD05C2618272817579DE214A194A6D49 /* NSLayoutConstraint+PureLayout.m */,
+				6FC98C9B59DAC5F133333539ED3A575E /* PureLayout.h */,
+				DD05720258997143EC5AADDD36F7CE0F /* PureLayout+Internal.h */,
+				1DF8ED924A9E56C1E60671F9CF3272BF /* PureLayoutDefines.h */,
+				766F8882AD0D0DB979FAF648B7DD49C5 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
+		6A8E29F258A0ED6FC371E5C81B82F368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD166C5F892A9CFE39C0EC5217EB4ACF /* EasyPeasy */,
+				6164D154385FDCF929F4D6370CEEBBB1 /* PureLayout */,
+				95F88AE6D086DDA82FC3C9B337836BAE /* SwiftyButton */,
+				E3F5A3825CB58E329D0BB59F69D94D57 /* UIColor_Hex_Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7345E0AD4E557FDA07E643DE7F9CB332 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E5D4651A6F42DB921211F7D58E7CE29 /* Info.plist */,
+				6BB27BC7ED6C53FB340E5077D348D211 /* SwiftyButton.modulemap */,
+				7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */,
+				AB2AF3219A55DFF79A833A6CD71A6705 /* SwiftyButton-dummy.m */,
+				B11E6B31A3C3C00BF6D2F3AE2B21FCFB /* SwiftyButton-prefix.pch */,
+				CA8CE1B502B7AE94D67D33F64750272B /* SwiftyButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyButton";
+			sourceTree = "<group>";
+		};
+		7408361A7EFB22E3BD4979BE5B667B52 /* Pods-TtroAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D6B5F0CBABE45F9938237807C3AF1F54 /* Info.plist */,
+				500CC251DE7FF572AF26266CAB5E17CA /* Pods-TtroAlertViewController.modulemap */,
+				1B176D939831D31D7D7200F07C7236D8 /* Pods-TtroAlertViewController-acknowledgements.markdown */,
+				6807FB1E603C8709EA1C38F5D88562A1 /* Pods-TtroAlertViewController-acknowledgements.plist */,
+				94D8DB1557F772C2D3EB5CDA572568AB /* Pods-TtroAlertViewController-dummy.m */,
+				BEBBF45DB30F8AE72F65C885AE25E62A /* Pods-TtroAlertViewController-resources.sh */,
+				28362771B714935686CCAFEE0AAF03D4 /* Pods-TtroAlertViewController-umbrella.h */,
+				86898DDF36FE87D6C1810EDF8F4F494C /* Pods-TtroAlertViewController.debug.xcconfig */,
+				9AEAFA1B5D5E0940CB4A2F13A545D602 /* Pods-TtroAlertViewController.release.xcconfig */,
+			);
+			name = "Pods-TtroAlertViewController";
+			path = "Target Support Files/Pods-TtroAlertViewController";
+			sourceTree = "<group>";
+		};
+		766F8882AD0D0DB979FAF648B7DD49C5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEBF92BC71693E6E968F5D20E6139470 /* Info.plist */,
+				846E1FE6FCF507659BE24F18DFCAD5C2 /* PureLayout.modulemap */,
+				CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */,
+				467951529B77A97B65EE60BA4ACF4345 /* PureLayout-dummy.m */,
+				342F0ED1B0F478B101F42188EB7C25AF /* PureLayout-prefix.pch */,
+				AEA92B83CD3D32B0FD5DF2A7CE3143CF /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				1C83B8720AE6F11243B90960AABC8564 /* Development Pods */,
+				32FC4C9B61F9F6A41A03752AAF0CDFC6 /* Frameworks */,
+				6A8E29F258A0ED6FC371E5C81B82F368 /* Pods */,
+				40884F90171C2BD90EA7DE243C10EF51 /* Products */,
+				CF12A933A2B067FA355E879CC0C8B7A0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		86B94CAA48892054CE138D6B95CE2A10 /* Pods-TtroAlertViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D9FA2F356E30EEB4C4F98E4388320FA /* Info.plist */,
+				280B580D66F6143DFC44E6FCB731B314 /* Pods-TtroAlertViewControllerTests.modulemap */,
+				AFE75DC4AB00547BC2BF63FBBB2F8A6D /* Pods-TtroAlertViewControllerTests-acknowledgements.markdown */,
+				C47E16112794C69B6A84566CAABF2C65 /* Pods-TtroAlertViewControllerTests-acknowledgements.plist */,
+				E3D343ACA88C43196FE2028ED77E8E47 /* Pods-TtroAlertViewControllerTests-dummy.m */,
+				0FAB186620CD95E51C144C6167AC0BA5 /* Pods-TtroAlertViewControllerTests-frameworks.sh */,
+				8C7E3F82A8FA9F07699FBA0FE3D76748 /* Pods-TtroAlertViewControllerTests-resources.sh */,
+				A0733BBDA49091B24C898CE36E166D13 /* Pods-TtroAlertViewControllerTests-umbrella.h */,
+				F63CB751DD732B68EBB3529B36079047 /* Pods-TtroAlertViewControllerTests.debug.xcconfig */,
+				51A90F8E215976EDB5B4BBD2859A1BED /* Pods-TtroAlertViewControllerTests.release.xcconfig */,
+			);
+			name = "Pods-TtroAlertViewControllerTests";
+			path = "Target Support Files/Pods-TtroAlertViewControllerTests";
+			sourceTree = "<group>";
+		};
+		881970111ABBC9FFA9B410A52823445F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4B179E7B67438055435C28AA1F806EFB /* EasyPeasy.modulemap */,
+				D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */,
+				FFA1E23324DF9B3EF08555A06DF0EF77 /* EasyPeasy-dummy.m */,
+				2781152E1ACFC46B481A2F99FCCE0A50 /* EasyPeasy-prefix.pch */,
+				A686346CE2E9EC65BA60FB32D4E57F9B /* EasyPeasy-umbrella.h */,
+				3F51BF9A052E540C36D235DC91DEB53B /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyPeasy";
+			sourceTree = "<group>";
+		};
+		9267A0ABE380EA4B5448D82822FA91D2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F42E79CAA0E1ADE6D2548D549A91B7A6 /* Info.plist */,
+				F2BACCFEEDFFF95F61D825C0D133F6E9 /* PayWandBasicElements.modulemap */,
+				B898D22B0842949DC5EA4263DB54C6DC /* PayWandBasicElements.xcconfig */,
+				A51357AB99D1634CF246A54685C6FF69 /* PayWandBasicElements-dummy.m */,
+				E257970444429EED61D212C8C02C3886 /* PayWandBasicElements-prefix.pch */,
+				5D9C2BFFF5C946A03AFDCDD24867C7E6 /* PayWandBasicElements-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../TtroAlertViewController/Pods/Target Support Files/PayWandBasicElements";
+			sourceTree = "<group>";
+		};
+		95F88AE6D086DDA82FC3C9B337836BAE /* SwiftyButton */ = {
+			isa = PBXGroup;
+			children = (
+				3D04B24893CA482755C00E4B6C4EE47F /* SwiftyButton.swift */,
+				2CA63E48018BF4194BE50FC3687E5D63 /* SwiftyButton+ResizableImage.swift */,
+				AD5002E8F51A9C2A9C05370C5C35199A /* CustomContent */,
+				7345E0AD4E557FDA07E643DE7F9CB332 /* Support Files */,
+			);
+			name = SwiftyButton;
+			path = SwiftyButton;
+			sourceTree = "<group>";
+		};
+		AD5002E8F51A9C2A9C05370C5C35199A /* CustomContent */ = {
+			isa = PBXGroup;
+			children = (
+				31E1F8CAB187828CEB42E110B2DB0B98 /* SwiftyCustomContentButton.swift */,
+			);
+			name = CustomContent;
+			sourceTree = "<group>";
+		};
+		CAA2AB931D3F293CFF5A34A5C88D0E34 /* PayWandBasicElements */ = {
+			isa = PBXGroup;
+			children = (
+				110C216BE8C2BAF1CE08E9DFDEF88E86 /* APCustomBlurView.swift */,
+				59BC451670B87689208E7C29259314D7 /* Extensions.swift */,
+				3866CD99D41D82CDF70F717592484160 /* TtroButton.swift */,
+				809AA18BFD030BF9431BD924D9A23DEF /* TtroDigitEntry.swift */,
+				F96A48B8346C3D5B692FAB02D77B1EC6 /* TtroLabel.swift */,
+				9A32CDB6FAD52C8621726033BB02FF83 /* TtroTextField.swift */,
+			);
+			name = PayWandBasicElements;
+			path = PayWandBasicElements;
+			sourceTree = "<group>";
+		};
+		CD166C5F892A9CFE39C0EC5217EB4ACF /* EasyPeasy */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B82A4666AC0783C10B5482F550525 /* Attribute.swift */,
+				CE663E4B5C2A5D515F27E78F56619B3C /* CompoundAttribute.swift */,
+				5FD48D6CE3F5F90CA57A87AE38F246E3 /* Constant.swift */,
+				0529F48124D42CDBDD7DC068ACE8D7BD /* Context.swift */,
+				807D8B0E6F29C19627A5E83B22601D08 /* DimensionAttribute.swift */,
+				6480C84A3C99FB88F14335BB5A067A42 /* DimensionAttribute+AppKit.swift */,
+				7A9B9CD36C3FDB6263A5719197040554 /* DimensionAttribute+UIKit.swift */,
+				6BFF802CE58F570F2C0C79A1D14B17DB /* Item.swift */,
+				15177EFDC72809A153511C0ED7C7391B /* Item+AppKit.swift */,
+				C2EE8B61A93DE06D0C28D56D45E16A30 /* Item+UIKit.swift */,
+				F991D62C0A9AC9BB8E05DD809A8F7775 /* Node.swift */,
+				C10A34F82B36DE560A8406B65BF6D99C /* NSLayoutGuide+Easy.swift */,
+				ABA811D27DA03F4841B168A1A43DB290 /* NSView+Easy.swift */,
+				FCE82743A329FC0E4CD0AD38ABE5DFF5 /* PositionAttribute.swift */,
+				834A9AB3C56125A54104528B895AF50F /* PositionAttribute+AppKit.swift */,
+				0423AEBBBD232868ACD36843C7AE957F /* PositionAttribute+UIKit.swift */,
+				4E978873855136B75535D8A5439F8F12 /* Priority.swift */,
+				26715E4823430C20A5D2C3B5D71294B1 /* ReferenceAttribute.swift */,
+				C87F2729EF0F4119520142499987156E /* UILayoutGuide+Easy.swift */,
+				F2556DFDDEE935120FC39A07BB4DF3EA /* UIView+Easy.swift */,
+				881970111ABBC9FFA9B410A52823445F /* Support Files */,
+			);
+			name = EasyPeasy;
+			path = EasyPeasy;
+			sourceTree = "<group>";
+		};
+		CF12A933A2B067FA355E879CC0C8B7A0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7408361A7EFB22E3BD4979BE5B667B52 /* Pods-TtroAlertViewController */,
+				86B94CAA48892054CE138D6B95CE2A10 /* Pods-TtroAlertViewControllerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DC9D17D3EB78FB147A398F0ABB7F6B49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				678DBC5D9B77311B5D772684CD0C26F7 /* Info.plist */,
+				7D199E8630B497C3A6F85870C62D1E91 /* UIColor_Hex_Swift.modulemap */,
+				C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */,
+				8B573659E5B4AC4A7997B196D4A7D209 /* UIColor_Hex_Swift-dummy.m */,
+				FE710006D2CD214E2AB5DCEFEB4107AC /* UIColor_Hex_Swift-prefix.pch */,
+				8E3D8CC23C3AC5779470CCFCC25BF7ED /* UIColor_Hex_Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor_Hex_Swift";
+			sourceTree = "<group>";
+		};
+		E0DB240206C9FB428D57E7B465498115 /* PayWandBasicElements */ = {
+			isa = PBXGroup;
+			children = (
+				CAA2AB931D3F293CFF5A34A5C88D0E34 /* PayWandBasicElements */,
+				9267A0ABE380EA4B5448D82822FA91D2 /* Support Files */,
+			);
+			name = PayWandBasicElements;
+			path = ../../PayWandBasicElements;
+			sourceTree = "<group>";
+		};
+		E3F5A3825CB58E329D0BB59F69D94D57 /* UIColor_Hex_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				4A0344E2AC9A91ECB47535FE07773AAF /* HEXColor.h */,
+				1C59926DCEF77984C0936B7EF4C7E86A /* UIColorExtension.swift */,
+				DC9D17D3EB78FB147A398F0ABB7F6B49 /* Support Files */,
+			);
+			name = UIColor_Hex_Swift;
+			path = UIColor_Hex_Swift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0BE1B5EDE8487171034827BA4CB48963 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CC295E4383A5F0A07EA42CAE243276 /* PayWandBasicElements-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0EA9E9AE5BBCDE4EB1F4BB86D9717E2B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F56CCEAD85BF57AF7D00B2B34F1729 /* HEXColor.h in Headers */,
+				FB45CA1317275242EAE843BAB59D0F68 /* UIColor_Hex_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A5CF7C9046F0D677E1D6DFF66EF549 /* EasyPeasy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C44585AAA777D1AE2EB6B84F19F8377 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B927A12AD2B23A3B7C5D10C022021B /* Pods-TtroAlertViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		844A88EEBEBF5C1F26AA9981614A63EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0624E8256DEB0510CB869DB3CE092381 /* Pods-TtroAlertViewControllerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC7388E8E7113394B81E7D98615C0DFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3F6E4C54884F1E28AF85795ACB1FB64 /* SwiftyButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB861304A039E9D83854859B951AEBE9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0B37F76060CCD8CB05A9958CBB9C143 /* ALView+PureLayout.h in Headers */,
+				DDA435B3FE27F50C8F7D2FB5899B324E /* NSArray+PureLayout.h in Headers */,
+				883A058B9815B3CFD89DDFDB1CAA0DA2 /* NSLayoutConstraint+PureLayout.h in Headers */,
+				C7604258E5E7FD6C1659545514F34E85 /* PureLayout+Internal.h in Headers */,
+				61A5DBA8B391FC6F8FCB55A6DF698272 /* PureLayout-umbrella.h in Headers */,
+				8CB4FD30B0E4C10C3449F7F0263D1537 /* PureLayout.h in Headers */,
+				528852BBA10BDD4CF993006141B60763 /* PureLayoutDefines.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0010BDB5A9EE9086CA2AB7377D5C9BBF /* Build configuration list for PBXNativeTarget "SwiftyButton" */;
+			buildPhases = (
+				96DDFC36ED330E997929F26B0AC71305 /* Sources */,
+				5D939A1EB1BEFBABFB75E708B18E7236 /* Frameworks */,
+				AC7388E8E7113394B81E7D98615C0DFC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A8343AB2BE21B223E4B320FA8444F9 /* PBXTargetDependency */,
+			);
+			name = SwiftyButton;
+			productName = SwiftyButton;
+			productReference = 47812F9E3B8C84014589432435389C7B /* SwiftyButton.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D866DA0B0F9751548F96DDEB8965D20 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */;
+			buildPhases = (
+				624A0C866B232AD1F51BA064EEE38AD8 /* Sources */,
+				707AC0B1B4461CE6629737959E76E959 /* Frameworks */,
+				0BE1B5EDE8487171034827BA4CB48963 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79AD0339D04477A5D1935F0BDBACE967 /* PBXTargetDependency */,
+				1F820B878316AFE4D911138077A85C87 /* PBXTargetDependency */,
+				A042BEA8DC5021C5995EB5DF49109C70 /* PBXTargetDependency */,
+			);
+			name = PayWandBasicElements;
+			productName = PayWandBasicElements;
+			productReference = 2ABF0F51FEDD5BB63AB8DF7825AF4C09 /* PayWandBasicElements.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		724257D30117A1F3BB0E1754326AFE29 /* Pods-TtroAlertViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077E112C07158F84EA344D307171CD5F /* Build configuration list for PBXNativeTarget "Pods-TtroAlertViewControllerTests" */;
+			buildPhases = (
+				9D58488471A58F1C88278A9B4D17DE9B /* Sources */,
+				1D150C2F92CB829E44E4DF6B6B4F170D /* Frameworks */,
+				844A88EEBEBF5C1F26AA9981614A63EE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				950EB8B2847EEBB904308F784631CFA5 /* PBXTargetDependency */,
+				D32B27BBB69CE80A03C2FC99D47F898A /* PBXTargetDependency */,
+				3EFAFC197D91E7E4CCE21E18C90794B3 /* PBXTargetDependency */,
+				CFFF1F29B6BD5009E63E6AE1F0CF18D4 /* PBXTargetDependency */,
+				44963883CFF23CB64F73056A99110988 /* PBXTargetDependency */,
+			);
+			name = "Pods-TtroAlertViewControllerTests";
+			productName = "Pods-TtroAlertViewControllerTests";
+			productReference = BCAC712C699B6A12E54C83927EB1C89B /* Pods_TtroAlertViewControllerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5E209CC24F5AD89AB9E769E0EF11BE /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */;
+			buildPhases = (
+				BFB883DB86401115C4F30712B7666575 /* Sources */,
+				22E64FA70E9DF60DB7FCCA890CCF0879 /* Frameworks */,
+				0EA9E9AE5BBCDE4EB1F4BB86D9717E2B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UIColor_Hex_Swift;
+			productName = UIColor_Hex_Swift;
+			productReference = 6CA15E63449661738D54A3A320D44030 /* UIColor_Hex_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */;
+			buildPhases = (
+				BEE1CD701E167910F30CCB5D80ED2743 /* Sources */,
+				DC24EEEE83FF68090FE613948B95942A /* Frameworks */,
+				6A997E6E8C8D90774BDD7E72EB07D7E1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyPeasy;
+			productName = EasyPeasy;
+			productReference = 2018E3CB574A73A60BF79440D6839708 /* EasyPeasy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4253F87176115CA05D9012798046971 /* PureLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E944E25CB18BDFFA85241F0E5A26793E /* Build configuration list for PBXNativeTarget "PureLayout" */;
+			buildPhases = (
+				1D0EAA61C79F44C87927B181AE2EB344 /* Sources */,
+				988FD6C0DD546C6385D6558B885773F6 /* Frameworks */,
+				FB861304A039E9D83854859B951AEBE9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PureLayout;
+			productName = PureLayout;
+			productReference = 6DB7775EC9FDEA67AC32F7D83EE36160 /* PureLayout.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F0C79121471073CD853C5E94D913696E /* Pods-TtroAlertViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8886608CFA2B67CD06C6F4F460B746E4 /* Build configuration list for PBXNativeTarget "Pods-TtroAlertViewController" */;
+			buildPhases = (
+				7ED2D52894FDC7AE9E9278DFB8FFC126 /* Sources */,
+				B8335EFFB3B85CB7EC9F5E1324A5B53D /* Frameworks */,
+				6C44585AAA777D1AE2EB6B84F19F8377 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F2A75484909E6902C149509D25B0E0 /* PBXTargetDependency */,
+				9C3C07D8E28C890BFDB1717070709BF3 /* PBXTargetDependency */,
+				59AEF2B04E7D0E4E7FBD28A7D42C569E /* PBXTargetDependency */,
+				D2BD16958732F617EAE73E8341DE8C3B /* PBXTargetDependency */,
+				BEDAB6A1982D474DC4A135012F8065E5 /* PBXTargetDependency */,
+			);
+			name = "Pods-TtroAlertViewController";
+			productName = "Pods-TtroAlertViewController";
+			productReference = BA03683C10C1108857BB01B3DAE610AB /* Pods_TtroAlertViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 40884F90171C2BD90EA7DE243C10EF51 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */,
+				60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */,
+				F0C79121471073CD853C5E94D913696E /* Pods-TtroAlertViewController */,
+				724257D30117A1F3BB0E1754326AFE29 /* Pods-TtroAlertViewControllerTests */,
+				D4253F87176115CA05D9012798046971 /* PureLayout */,
+				1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */,
+				76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D0EAA61C79F44C87927B181AE2EB344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				648EFEC4186BA6BA3818656A4969416A /* ALView+PureLayout.m in Sources */,
+				0DD46A9876D07B79D473C6D3FC4946D2 /* NSArray+PureLayout.m in Sources */,
+				F39915BF9B78F9A7F550FC6775A4BD4A /* NSLayoutConstraint+PureLayout.m in Sources */,
+				D83409947752D7FCDAAE8B5F7734875D /* PureLayout-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624A0C866B232AD1F51BA064EEE38AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D441EF7561E9AEEF329E3C0434D2B /* APCustomBlurView.swift in Sources */,
+				1EFA38A9B401515DEA501D1CDC0A8EB9 /* Extensions.swift in Sources */,
+				C95C8312DBA615BA67B27518E9F5A0A5 /* PayWandBasicElements-dummy.m in Sources */,
+				E02861D212636F4FE44250C89EB0F20A /* TtroButton.swift in Sources */,
+				EE3F7936D0001C21F6125A3A0D1F33FF /* TtroDigitEntry.swift in Sources */,
+				5AC48C172934C77A2C2F6B8E9186CDB2 /* TtroLabel.swift in Sources */,
+				E8988848228638F22718E81F898BF7AE /* TtroTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ED2D52894FDC7AE9E9278DFB8FFC126 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE21AF5ABE52F532463CBFAA343881EA /* Pods-TtroAlertViewController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96DDFC36ED330E997929F26B0AC71305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61A54646708C458650EC61D0B0D6512 /* SwiftyButton+ResizableImage.swift in Sources */,
+				55B877E31E2CC41C2E0DC6F73D0451B3 /* SwiftyButton-dummy.m in Sources */,
+				6AFB4E22A96B1FD008C5720D8E6EAEED /* SwiftyButton.swift in Sources */,
+				8E9360C02A77DCA0D1F9D8415CF059AF /* SwiftyCustomContentButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D58488471A58F1C88278A9B4D17DE9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BD975149E27776BBCB6F759B77B192 /* Pods-TtroAlertViewControllerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEE1CD701E167910F30CCB5D80ED2743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3474E4E655382B527D799C55021A3567 /* Attribute.swift in Sources */,
+				31F60DBB6662B43BB7182A94B1063E40 /* CompoundAttribute.swift in Sources */,
+				44B2644538FBA736963EE6D7FC685A1A /* Constant.swift in Sources */,
+				D26ECF6D846C3291E945D1FD1165D4DD /* Context.swift in Sources */,
+				BBDD5A2F124A7538D60BFC9B9B91C0EB /* DimensionAttribute+AppKit.swift in Sources */,
+				584B53C655CCC4AF7C7F44A174D34F40 /* DimensionAttribute+UIKit.swift in Sources */,
+				0E4D484CDC66423F39D398ED28B9A37F /* DimensionAttribute.swift in Sources */,
+				238EDC1AB26BE7C697EF58F21B949C88 /* EasyPeasy-dummy.m in Sources */,
+				55C78A8925CC7E1F2B5194398B914833 /* Item+AppKit.swift in Sources */,
+				BC5AB76802C3AF039CFB6102E2E89AD7 /* Item+UIKit.swift in Sources */,
+				1D2FF4D810821FA697B82E9BE08B029F /* Item.swift in Sources */,
+				9053EBA2CB510BFE30A7B32C12B8070E /* Node.swift in Sources */,
+				C3F1CF25A547A3761DD89DB494CECF60 /* NSLayoutGuide+Easy.swift in Sources */,
+				FE600361B8F8D819D07EE55AD1BA9BCF /* NSView+Easy.swift in Sources */,
+				1F98403FA7386FBD5C04706DA198E178 /* PositionAttribute+AppKit.swift in Sources */,
+				CCF8C5BDA51404F535B734C8FD7A5B0D /* PositionAttribute+UIKit.swift in Sources */,
+				42DDC034671649DDD83A834774825CBB /* PositionAttribute.swift in Sources */,
+				9D5800496526AA7608455476C53AE0A6 /* Priority.swift in Sources */,
+				7FD80237B2B9D85C9B5FAA2B95DADF7F /* ReferenceAttribute.swift in Sources */,
+				8E0E660019420B111D1B730A20D55AAE /* UILayoutGuide+Easy.swift in Sources */,
+				48AD84F7956F1A5E5DABAD3114576032 /* UIView+Easy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFB883DB86401115C4F30712B7666575 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C860DF1DA2767DC93B882EED79A30518 /* UIColor_Hex_Swift-dummy.m in Sources */,
+				1C3BF79F0332D9CD83DE6E2B37941C6D /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F820B878316AFE4D911138077A85C87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = 8F37468D736D124ACC8CB10737DC5D9E /* PBXContainerItemProxy */;
+		};
+		3EFAFC197D91E7E4CCE21E18C90794B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 180DF9E2937A646834F97E753D71B1BE /* PBXContainerItemProxy */;
+		};
+		44963883CFF23CB64F73056A99110988 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = F3340325E56083A14FE8A4A9EBD0997D /* PBXContainerItemProxy */;
+		};
+		59AEF2B04E7D0E4E7FBD28A7D42C569E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 4D9C83221326E47731C4D9BE9C82C8CB /* PBXContainerItemProxy */;
+		};
+		59F2A75484909E6902C149509D25B0E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = E8F2235297148783808CD5EFCCDB9754 /* PBXContainerItemProxy */;
+		};
+		77A8343AB2BE21B223E4B320FA8444F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PureLayout;
+			target = D4253F87176115CA05D9012798046971 /* PureLayout */;
+			targetProxy = 79D05CA56F3371BF2DA41F0E991FC7B1 /* PBXContainerItemProxy */;
+		};
+		79AD0339D04477A5D1935F0BDBACE967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = 12209939F82AFC6E53A18F9850C4D1CB /* PBXContainerItemProxy */;
+		};
+		950EB8B2847EEBB904308F784631CFA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyPeasy;
+			target = B5221EA08C01208C608AC6ECB17B9F2E /* EasyPeasy */;
+			targetProxy = 881CFEA554470D7831CB81C3B275B634 /* PBXContainerItemProxy */;
+		};
+		9C3C07D8E28C890BFDB1717070709BF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = A98FCA6766DE0951274DFD53FF3E559D /* PBXContainerItemProxy */;
+		};
+		A042BEA8DC5021C5995EB5DF49109C70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = C7906B8AD5A90A941DF42BD072DD3BF8 /* PBXContainerItemProxy */;
+		};
+		BEDAB6A1982D474DC4A135012F8065E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UIColor_Hex_Swift;
+			target = 76946471F39266E99B8704680A1D75FB /* UIColor_Hex_Swift */;
+			targetProxy = 451ABDA644722E8E6DB24F6B0FD4F623 /* PBXContainerItemProxy */;
+		};
+		CFFF1F29B6BD5009E63E6AE1F0CF18D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = B0F2004DC38B417876321C20894E5512 /* PBXContainerItemProxy */;
+		};
+		D2BD16958732F617EAE73E8341DE8C3B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyButton;
+			target = 1259A79E9C0160F09B8C80FBE4FA91D0 /* SwiftyButton */;
+			targetProxy = E3305A29C1E0D6C563F3E476BF19C1D8 /* PBXContainerItemProxy */;
+		};
+		D32B27BBB69CE80A03C2FC99D47F898A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PayWandBasicElements;
+			target = 60DAEEB1932B65A1B49F4B4E7B0C0048 /* PayWandBasicElements */;
+			targetProxy = 9F76A97E260354833FD49A4637DD4AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03E5A17600B23CFD1E10833E7982A0DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B898D22B0842949DC5EA4263DB54C6DC /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0D98362F5F2AEDB709CDA7D900B65101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A90F8E215976EDB5B4BBD2859A1BED /* Pods-TtroAlertViewControllerTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroAlertViewControllerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroAlertViewControllerTests/Pods-TtroAlertViewControllerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroAlertViewControllerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		31CDC30198B48C5C456D39F35840D7ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47F099A0367C98D29E3462DE6E488077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		48043D7587A64E662D4BDF2A61C54E34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B898D22B0842949DC5EA4263DB54C6DC /* PayWandBasicElements.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PayWandBasicElements/PayWandBasicElements-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PayWandBasicElements/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PayWandBasicElements/PayWandBasicElements.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PayWandBasicElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		506AF2D1B3064CB0895B84E13D456873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91104ECD21A7A3061C7C9DDC6D610B4 /* EasyPeasy.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyPeasy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyPeasy/EasyPeasy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EasyPeasy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AF4316603E3C54D8C88415E7BBF3CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B18562E69B88A228891590CA062D3F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7828FA4AF15D66CFFBB410966347444A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63CB751DD732B68EBB3529B36079047 /* Pods-TtroAlertViewControllerTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroAlertViewControllerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroAlertViewControllerTests/Pods-TtroAlertViewControllerTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroAlertViewControllerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A18B52356208E87C4600C8FA7489F835 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86898DDF36FE87D6C1810EDF8F4F494C /* Pods-TtroAlertViewController.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroAlertViewController/Pods-TtroAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1FF4282BBFBABBDE54F548574E169B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96D33E5ABE6C02B086F2E95B5B25720 /* UIColor_Hex_Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor_Hex_Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UIColor_Hex_Swift/UIColor_Hex_Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UIColor_Hex_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF5E21903D1AC4ED0C77D22AE34A4BBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FEA300A351C70F17D83ED9E1A204C09 /* SwiftyButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyButton/SwiftyButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyButton/SwiftyButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B09DADC69FC0D31272CA7EDACBFF9354 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AEAFA1B5D5E0940CB4A2F13A545D602 /* Pods-TtroAlertViewController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TtroAlertViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TtroAlertViewController/Pods-TtroAlertViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TtroAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F11B974E67D3A4314D988D86E1962357 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC0A5099DF83522CC488AA867496DDA /* PureLayout.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PureLayout/PureLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PureLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PureLayout/PureLayout.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0010BDB5A9EE9086CA2AB7377D5C9BBF /* Build configuration list for PBXNativeTarget "SwiftyButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5E21903D1AC4ED0C77D22AE34A4BBE /* Debug */,
+				6B18562E69B88A228891590CA062D3F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		077E112C07158F84EA344D307171CD5F /* Build configuration list for PBXNativeTarget "Pods-TtroAlertViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7828FA4AF15D66CFFBB410966347444A /* Debug */,
+				0D98362F5F2AEDB709CDA7D900B65101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09077C94E191775E258073FA5A3C405C /* Build configuration list for PBXNativeTarget "EasyPeasy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				506AF2D1B3064CB0895B84E13D456873 /* Debug */,
+				31CDC30198B48C5C456D39F35840D7ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D866DA0B0F9751548F96DDEB8965D20 /* Build configuration list for PBXNativeTarget "PayWandBasicElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48043D7587A64E662D4BDF2A61C54E34 /* Debug */,
+				03E5A17600B23CFD1E10833E7982A0DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8886608CFA2B67CD06C6F4F460B746E4 /* Build configuration list for PBXNativeTarget "Pods-TtroAlertViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18B52356208E87C4600C8FA7489F835 /* Debug */,
+				B09DADC69FC0D31272CA7EDACBFF9354 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5E209CC24F5AD89AB9E769E0EF11BE /* Build configuration list for PBXNativeTarget "UIColor_Hex_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F099A0367C98D29E3462DE6E488077 /* Debug */,
+				A1FF4282BBFBABBDE54F548574E169B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E944E25CB18BDFFA85241F0E5A26793E /* Build configuration list for PBXNativeTarget "PureLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF4316603E3C54D8C88415E7BBF3CAB /* Debug */,
+				F11B974E67D3A4314D988D86E1962357 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

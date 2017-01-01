@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02AE7E702BAA8A0C14E710E1 /* Pods_TtroAlertViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EB3DD06A464F686B8D222F /* Pods_TtroAlertViewController.framework */; };
 		75F52FA51E140D580098ED68 /* TtroAlertViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F52F9B1E140D580098ED68 /* TtroAlertViewController.framework */; };
 		75F52FAA1E140D580098ED68 /* TtroAlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52FA91E140D580098ED68 /* TtroAlertViewControllerTests.swift */; };
 		75F52FAC1E140D580098ED68 /* TtroAlertViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F52F9E1E140D580098ED68 /* TtroAlertViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75F52FB71E140D8D0098ED68 /* TtroAlertPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52FB51E140D8D0098ED68 /* TtroAlertPage.swift */; };
+		75F52FB81E140D8D0098ED68 /* TtroAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52FB61E140D8D0098ED68 /* TtroAlertViewController.swift */; };
+		75F52FBA1E140E850098ED68 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F52FB91E140E850098ED68 /* Animator.swift */; };
+		CE9421D1993BFD25ED4957FC /* Pods_TtroAlertViewControllerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AEF38A637F41D1B369AD28 /* Pods_TtroAlertViewControllerTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30AEF38A637F41D1B369AD28 /* Pods_TtroAlertViewControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroAlertViewControllerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3730EC88DD65B0E4E36EB791 /* Pods-TtroAlertViewControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroAlertViewControllerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroAlertViewControllerTests/Pods-TtroAlertViewControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52EB3DD06A464F686B8D222F /* Pods_TtroAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TtroAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F52F9B1E140D580098ED68 /* TtroAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TtroAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F52F9E1E140D580098ED68 /* TtroAlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TtroAlertViewController.h; sourceTree = "<group>"; };
 		75F52F9F1E140D580098ED68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F52FA41E140D580098ED68 /* TtroAlertViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TtroAlertViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F52FA91E140D580098ED68 /* TtroAlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TtroAlertViewControllerTests.swift; sourceTree = "<group>"; };
 		75F52FAB1E140D580098ED68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F52FB51E140D8D0098ED68 /* TtroAlertPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroAlertPage.swift; sourceTree = "<group>"; };
+		75F52FB61E140D8D0098ED68 /* TtroAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TtroAlertViewController.swift; sourceTree = "<group>"; };
+		75F52FB91E140E850098ED68 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
+		850C9D12F184395C6B0ED76D /* Pods-TtroAlertViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroAlertViewController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TtroAlertViewController/Pods-TtroAlertViewController.debug.xcconfig"; sourceTree = "<group>"; };
+		E3C581DCA1049E162C19CE98 /* Pods-TtroAlertViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroAlertViewController.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroAlertViewController/Pods-TtroAlertViewController.release.xcconfig"; sourceTree = "<group>"; };
+		E64A65B060242B20F174FE8D /* Pods-TtroAlertViewControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TtroAlertViewControllerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TtroAlertViewControllerTests/Pods-TtroAlertViewControllerTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02AE7E702BAA8A0C14E710E1 /* Pods_TtroAlertViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +59,41 @@
 			buildActionMask = 2147483647;
 			files = (
 				75F52FA51E140D580098ED68 /* TtroAlertViewController.framework in Frameworks */,
+				CE9421D1993BFD25ED4957FC /* Pods_TtroAlertViewControllerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E47BC1C3F1D8D7D266A86BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				850C9D12F184395C6B0ED76D /* Pods-TtroAlertViewController.debug.xcconfig */,
+				E3C581DCA1049E162C19CE98 /* Pods-TtroAlertViewController.release.xcconfig */,
+				3730EC88DD65B0E4E36EB791 /* Pods-TtroAlertViewControllerTests.debug.xcconfig */,
+				E64A65B060242B20F174FE8D /* Pods-TtroAlertViewControllerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6EDE448577C0393FD7C4DF26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52EB3DD06A464F686B8D222F /* Pods_TtroAlertViewController.framework */,
+				30AEF38A637F41D1B369AD28 /* Pods_TtroAlertViewControllerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		75F52F911E140D570098ED68 = {
 			isa = PBXGroup;
 			children = (
 				75F52F9D1E140D580098ED68 /* TtroAlertViewController */,
 				75F52FA81E140D580098ED68 /* TtroAlertViewControllerTests */,
 				75F52F9C1E140D580098ED68 /* Products */,
+				4E47BC1C3F1D8D7D266A86BE /* Pods */,
+				6EDE448577C0393FD7C4DF26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,7 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				75F52F9E1E140D580098ED68 /* TtroAlertViewController.h */,
+				75F52FB51E140D8D0098ED68 /* TtroAlertPage.swift */,
+				75F52FB61E140D8D0098ED68 /* TtroAlertViewController.swift */,
 				75F52F9F1E140D580098ED68 /* Info.plist */,
+				75F52FB91E140E850098ED68 /* Animator.swift */,
 			);
 			path = TtroAlertViewController;
 			sourceTree = "<group>";
@@ -104,10 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75F52FAF1E140D580098ED68 /* Build configuration list for PBXNativeTarget "TtroAlertViewController" */;
 			buildPhases = (
+				9AA2E531B133F40A67CAF985 /* [CP] Check Pods Manifest.lock */,
 				75F52F961E140D580098ED68 /* Sources */,
 				75F52F971E140D580098ED68 /* Frameworks */,
 				75F52F981E140D580098ED68 /* Headers */,
 				75F52F991E140D580098ED68 /* Resources */,
+				A1E1268534247DA0EF5E09AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 75F52FB21E140D580098ED68 /* Build configuration list for PBXNativeTarget "TtroAlertViewControllerTests" */;
 			buildPhases = (
+				5E26144072AACF0C43F5895D /* [CP] Check Pods Manifest.lock */,
 				75F52FA01E140D580098ED68 /* Sources */,
 				75F52FA11E140D580098ED68 /* Frameworks */,
 				75F52FA21E140D580098ED68 /* Resources */,
+				AA20510A4B76E5FFA1DC7108 /* [CP] Embed Pods Frameworks */,
+				00654104B416A64FBCCCAF64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +195,7 @@
 					75F52F9A1E140D580098ED68 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = F53V3ZJV96;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					75F52FA31E140D580098ED68 = {
@@ -193,11 +240,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00654104B416A64FBCCCAF64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroAlertViewControllerTests/Pods-TtroAlertViewControllerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E26144072AACF0C43F5895D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA2E531B133F40A67CAF985 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1E1268534247DA0EF5E09AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroAlertViewController/Pods-TtroAlertViewController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA20510A4B76E5FFA1DC7108 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TtroAlertViewControllerTests/Pods-TtroAlertViewControllerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		75F52F961E140D580098ED68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F52FBA1E140E850098ED68 /* Animator.swift in Sources */,
+				75F52FB81E140D8D0098ED68 /* TtroAlertViewController.swift in Sources */,
+				75F52FB71E140D8D0098ED68 /* TtroAlertPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +449,9 @@
 		};
 		75F52FB01E140D580098ED68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 850C9D12F184395C6B0ED76D /* Pods-TtroAlertViewController.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
@@ -334,13 +464,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ParsPay.TtroAlertViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		75F52FB11E140D580098ED68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C581DCA1049E162C19CE98 /* Pods-TtroAlertViewController.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
@@ -359,7 +492,9 @@
 		};
 		75F52FB31E140D580098ED68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3730EC88DD65B0E4E36EB791 /* Pods-TtroAlertViewControllerTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
 				INFOPLIST_FILE = TtroAlertViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -371,7 +506,9 @@
 		};
 		75F52FB41E140D580098ED68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E64A65B060242B20F174FE8D /* Pods-TtroAlertViewControllerTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F53V3ZJV96;
 				INFOPLIST_FILE = TtroAlertViewControllerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -400,6 +537,7 @@
 				75F52FB11E140D580098ED68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75F52FB21E140D580098ED68 /* Build configuration list for PBXNativeTarget "TtroAlertViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +546,7 @@
 				75F52FB41E140D580098ED68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
