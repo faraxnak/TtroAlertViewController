@@ -10,18 +10,20 @@ import UIKit
 import EasyPeasy
 import PayWandBasicElements
 
+public enum TtroAlertType {
+    case alert
+    case okAlert
+    case action
+}
+
+public enum TtroAlertButtonType {
+    case `default`
+    case cancel
+}
+
 class TtroAlertPage: UIView {
     
-    enum TtroAlertType {
-        case alert
-        case okAlert
-        case action
-    }
     
-    enum TtroAlertButtonType {
-        case `default`
-        case cancel
-    }
     
     var titleLabel : UILabel!
     var messageLabel : UILabel!

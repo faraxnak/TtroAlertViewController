@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TtroAlertViewControllerTransitionAnimationDelegate : class {
+public protocol TtroAlertViewControllerTransitionAnimationDelegate : class {
     func isPresentedOnTabbar(fromVC viewController : UIViewController) -> Bool
 }
 

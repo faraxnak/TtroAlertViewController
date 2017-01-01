@@ -11,11 +11,11 @@ import EasyPeasy
 import PayWandBasicElements
 
 
-protocol TtroAlertViewControllerDelegate : class {
+public protocol TtroAlertViewControllerDelegate : TtroAlertViewControllerTransitionAnimationDelegate {
     func getFrontView() -> UIView
 }
 
-class TtroAlertViewController: UIViewController {
+public class TtroAlertViewController: UIViewController {
     
     let showTransitionAnimation = TtroAlertViewControllerShowTransitionAnimation()
     let dismissTransitionAnimation = TtroAlertViewControllerDismissTransitionAnimation()
@@ -51,32 +51,34 @@ class TtroAlertViewController: UIViewController {
     }
     
     var alertPageYConstraint : NSLayoutConstraint!
-    var delegate : TtroAlertViewControllerDelegate!
+    public var delegate : TtroAlertViewControllerDelegate!
     var message : String!
-    var type = TtroAlertPage.TtroAlertType.okAlert
+    var type = TtroAlertType.okAlert
     
     
-    convenience init(title : String, message : String, type : TtroAlertPage.TtroAlertType, snapshot : UIView) {
+    public convenience init(title : String, message : String, type : TtroAlertType) {
         self.init(nibName : nil, bundle : nil )
         
-        frontView = snapshot
+        self.type = type
+        self.title = title
+        self.message = message
         
         transitioningDelegate = self
+        showTransitionAnimation.delegate = self
         self.modalPresentationStyle = .overCurrentContext
-        initElements(title, message: message, type: type)
     }
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
@@ -87,7 +89,7 @@ class TtroAlertViewController: UIViewController {
         initElements(title!, message: message, type: type)
     }
     
-    func initElements(_ title : String, message : String, type : TtroAlertPage.TtroAlertType){
+    func initElements(_ title : String, message : String, type : TtroAlertType){
         
         let backBlurView = APCustomBlurView(withRadius: 2)
         backBlurView.translatesAutoresizingMaskIntoConstraints = false
@@ -174,18 +176,13 @@ class TtroAlertViewController: UIViewController {
         
         switch type {
         case .okAlert:
-            addAction("Ok", style: TtroAlertPage.TtroAlertButtonType.default, handler: {
+            addAction("Ok", style: TtroAlertButtonType.default, handler: {
                 self.dismiss(animated: true, completion: nil)
             })
         default:
             break
         }
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     func getCanvasPath(_ center : CGPoint, r : CGFloat, h : CGFloat, alpha : CGFloat) -> CGPath {
@@ -229,12 +226,12 @@ class TtroAlertViewController: UIViewController {
 }
 
 extension TtroAlertViewController : UIViewControllerTransitioningDelegate {
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return showTransitionAnimation
     }
     
     
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return dismissTransitionAnimation
     }
     
@@ -261,7 +258,13 @@ extension TtroAlertViewController : UIViewControllerTransitioningDelegate {
 }
 
 extension TtroAlertViewController {
-    func addAction(_ title: String, style: TtroAlertPage.TtroAlertButtonType, handler: @escaping () -> Void){
+    public func addAction(_ title: String, style: TtroAlertButtonType, handler: @escaping () -> Void){
         page.addAction(title, type: style, onTouch: handler)
+    }
+}
+
+extension TtroAlertViewController : TtroAlertViewControllerTransitionAnimationDelegate {
+    public func isPresentedOnTabbar(fromVC viewController : UIViewController) -> Bool {
+        return delegate.isPresentedOnTabbar(fromVC: viewController)
     }
 }
