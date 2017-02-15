@@ -1,0 +1,6 @@
+framework module Pods_AlertViewControllerSampleTests {
+  umbrella header "Pods-AlertViewControllerSampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

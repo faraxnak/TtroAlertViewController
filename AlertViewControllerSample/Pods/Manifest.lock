@@ -1,0 +1,38 @@
+PODS:
+  - EasyPeasy (1.4)
+  - PayWandBasicElements (0.0.6):
+    - EasyPeasy (~> 1.4)
+    - SwiftyButton (~> 0.5.0)
+    - UIColor_Hex_Swift
+  - PureLayout (3.0.2)
+  - SwiftyButton (0.5.0):
+    - SwiftyButton/CustomContent (= 0.5.0)
+  - SwiftyButton/CustomContent (0.5.0):
+    - PureLayout (~> 3.0)
+  - TtroAlertViewController (0.0.1):
+    - EasyPeasy
+    - PayWandBasicElements
+  - UIColor_Hex_Swift (3.0.2)
+
+DEPENDENCIES:
+  - EasyPeasy
+  - PayWandBasicElements (from `../../PayWandBasicElements/`)
+  - TtroAlertViewController (from `../`)
+
+EXTERNAL SOURCES:
+  PayWandBasicElements:
+    :path: ../../PayWandBasicElements/
+  TtroAlertViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EasyPeasy: c2e49ceb822edc0a5fffefd66240fff10129047d
+  PayWandBasicElements: dcf2939ad4bc331baaa1285ca2c1a34fc3abf6e5
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SwiftyButton: 7f1c7774a0aa721cbb6ea287742198ea0ee50c05
+  TtroAlertViewController: 11a0e15181d9af475ccd4bdc3ddc073321bc3a91
+  UIColor_Hex_Swift: 95f718452092a3efc8a827dffd2c04d3237be02d
+
+PODFILE CHECKSUM: 2dfe51bf33faf9a70db2bb9e35a87e6eb43ace69
+
+COCOAPODS: 1.2.0.beta.1

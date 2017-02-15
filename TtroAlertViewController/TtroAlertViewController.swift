@@ -25,6 +25,8 @@ public class TtroAlertViewController: UIViewController {
     
     var alertPage : UIView!
     
+    var initialYConstraintConstant : CGFloat = 0
+    
     var page : TtroAlertPage!
     var pageCopy : TtroAlertPage!
     
@@ -55,6 +57,7 @@ public class TtroAlertViewController: UIViewController {
     var message : String!
     var type = TtroAlertType.okAlert
     
+    var dismissHandler : (() -> ())?
     
     public convenience init(title : String, message : String, type : TtroAlertType) {
         self.init(nibName : nil, bundle : nil )
@@ -164,13 +167,28 @@ public class TtroAlertViewController: UIViewController {
             Width(w),
             Height(2*h),
         ]
-        alertPageYConstraint = alertPage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: origin.y + h - view.center.y)
+        alertPage.backgroundColor = UIColor.orange
+        initialYConstraintConstant = origin.y + h - view.center.y
+        alertPageYConstraint = alertPage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: initialYConstraintConstant)
         alertPageYConstraint.isActive = true
         alertPage.layer.cornerRadius = 10
         alertPage.backgroundColor = UIColor.TtroColors.white.color
         
         page = TtroAlertPage(title: title, message: message, type: type, superView: alertPage)
         setAlertPageForAnimation()
+        
+        pageCopy = TtroAlertPage(title: title, message: message, type: type, superView: alertPage)
+        pageCopy <- [
+            Height(h*(1.2)),
+            Width().like(alertPage),
+            Top(),
+            CenterX(),
+        ]
+        pageCopy.alpha = 0
+        
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.onPanningDownward(sender:)))
+        panGestureRecognizer.maximumNumberOfTouches = 1
+        page.addGestureRecognizer(panGestureRecognizer)
         
         view.layoutIfNeeded()
         
@@ -212,17 +230,63 @@ public class TtroAlertViewController: UIViewController {
         maskShape.fillRule = kCAFillRuleEvenOdd;
         frontView.layer.mask = maskShape
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    var isPanning = false
+    var isAnimatingPan = false
+    func onPanningDownward(sender : UIPanGestureRecognizer){
+        let displacement = sender.translation(in: page)
+        let velocity = sender.velocity(in: page)
+        if (sender.state == .ended){
+            isAnimatingPan = true
+            if (alertPageYConstraint.constant - initialYConstraintConstant > h/3){
+                panToBottom()
+            } else {
+                panToTop()
+            }
+        }
+        if abs(velocity.y) > abs(velocity.x) && !isAnimatingPan {
+            if (velocity.y > 0){
+                if (!isPanning){
+                    page.alpha = 0
+                    pageCopy.alpha = 1
+                    isPanning = true
+                }
+                print("panned down")
+                alertPageYConstraint.constant += displacement.y
+                if (alertPageYConstraint.constant - initialYConstraintConstant > 2*h/3 || velocity.y > 350){
+                    panToBottom()
+                }
+            } else if (velocity.y < 0 && isPanning){
+                alertPageYConstraint.constant += displacement.y
+                if (alertPageYConstraint.constant - initialYConstraintConstant < h/10){
+                    panToTop()
+                }
+            }
+        }
+        sender.setTranslation(CGPoint.zero, in: page)
     }
-    */
-
+    
+    func panToTop(){
+        isPanning = false
+        isAnimatingPan = true
+        UIView.animate(withDuration: 0.3, delay: 0, options: UIViewAnimationOptions.curveEaseOut, animations: { 
+            self.alertPageYConstraint.constant = self.initialYConstraintConstant
+            self.view.layoutIfNeeded()
+        }) { (_) in
+            self.page.alpha = 1
+            self.pageCopy.alpha = 0
+            self.isAnimatingPan = false
+        }
+    }
+    
+    func panToBottom(){
+        isAnimatingPan = true
+        if (dismissHandler != nil){
+            dismissHandler!()
+        } else {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
 }
 
 extension TtroAlertViewController : UIViewControllerTransitioningDelegate {
@@ -260,6 +324,12 @@ extension TtroAlertViewController : UIViewControllerTransitioningDelegate {
 extension TtroAlertViewController {
     public func addAction(_ title: String, style: TtroAlertButtonType, handler: @escaping () -> Void){
         page.addAction(title, type: style, onTouch: handler)
+        pageCopy.addAction(title, type: style) { 
+            
+        }
+        if (style == .cancel){
+            dismissHandler = handler
+        }
     }
 }
 

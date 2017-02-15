@@ -152,6 +152,14 @@ class TtroAlertPage: UIView {
         // Drawing code
     }
     */
+    
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        if (alpha != 0){
+            return super.hitTest(point, with: event)
+        } else {
+            return self
+        }
+    }
 
 }
 

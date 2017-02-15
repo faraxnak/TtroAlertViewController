@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : 9223372036854775807,
+    "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7824D2B6-6863-468A-BCCA-387CEE323B6E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8D2D75E1AA0E181F828F2ED5900FC3876DB45392" : "PayWandBasicElements\/",
+    "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688" : "TtroAlertViewController\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AlertViewControllerSample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AlertViewControllerSample\/AlertViewControllerSample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/TtroAlertViewController.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6D3BD2D4A45788AE542AB8D05BFFDFEE6DF74688"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/faraxnak\/PayWandBasicElements",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D2D75E1AA0E181F828F2ED5900FC3876DB45392"
+    }
+  ]
+}
