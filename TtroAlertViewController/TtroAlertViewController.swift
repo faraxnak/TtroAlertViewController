@@ -204,9 +204,9 @@ public class TtroAlertViewController: UIViewController {
     }
     
     func getCanvasPath(_ center : CGPoint, r : CGFloat, h : CGFloat, alpha : CGFloat) -> CGPath {
-        let beta = CGFloat(M_PI)/2 - alpha
+        let beta = CGFloat(Double.pi)/2 - alpha
         let canvasPath = UIBezierPath.init(arcCenter: center,
-                                           radius: r, startAngle: beta, endAngle: CGFloat(M_PI)/2 + alpha, clockwise: true)
+                                           radius: r, startAngle: beta, endAngle: CGFloat(Double.pi)/2 + alpha, clockwise: true)
         let w : CGFloat = 2 * r * sin(alpha)
         
         let origin = CGPoint(x: center.x - w/2, y: center.y + r * cos(alpha) - h)
@@ -215,7 +215,7 @@ public class TtroAlertViewController: UIViewController {
         canvasPath.append(UIBezierPath.init(arcCenter: center,
             radius: r, startAngle: -beta, endAngle: beta, clockwise: true))
         canvasPath.append(UIBezierPath.init(arcCenter: center,
-            radius: r, startAngle: CGFloat(M_PI)-beta, endAngle: CGFloat(M_PI)+beta, clockwise: true))
+            radius: r, startAngle: CGFloat(Double.pi)-beta, endAngle: CGFloat(Double.pi)+beta, clockwise: true))
 //        canvasPath.appendPath(UIBezierPath.init(rect: CGRect(origin: origin, size: size)))
         canvasPath.append(UIBezierPath(roundedRect: CGRect(origin: origin, size: size), byRoundingCorners: [UIRectCorner.topLeft, UIRectCorner.topRight], cornerRadii: CGSize(width: 10.0, height: 10.0)))
         let path = UIBezierPath.init(rect: frontView.frame)
