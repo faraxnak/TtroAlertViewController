@@ -53,7 +53,7 @@ public class TtroAlertViewController: UIViewController {
     }
     
     var alertPageYConstraint : NSLayoutConstraint!
-    public var delegate : TtroAlertViewControllerDelegate!
+    public weak var delegate : TtroAlertViewControllerDelegate!
     var message : String!
     var type = TtroAlertType.okAlert
     
