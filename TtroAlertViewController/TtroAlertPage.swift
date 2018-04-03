@@ -36,17 +36,17 @@ class TtroAlertPage: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         superView.addSubview(self)
         if let cv = constraintView {
-            self <- [
+            self.easy.layout([
                 Width().like(cv),
                 Top().to(cv, .top),
                 CenterX().to(cv),
-            ]
+            ])
         } else {
-            self <- [
+            self.easy.layout([
                 Width().like(superView),
                 Top(),
                 CenterX(),
-            ]
+            ])
         }
         
         initElements(title, message: message)
@@ -64,7 +64,7 @@ class TtroAlertPage: UIView {
         stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
-        stackView <- Edges()
+        stackView.easy.layout(Edges())
         stackView.alignment = .center
         stackView.distribution = .fillProportionally
         stackView.axis = .vertical
@@ -80,9 +80,9 @@ class TtroAlertPage: UIView {
         titleLabel.textColor = UIColor.TtroColors.darkBlue.color
         titleLabel.font = UIFont.TtroFonts.regular(size: 20).font
         titleLabel.baselineAdjustment = .alignCenters
-        titleLabel <- [
+        titleLabel.easy.layout([
             Width(*0.9).like(stackView)
-        ]
+        ])
 //        titleLabel <- [
 //            Height(*0.2).like(self)
 //        ]
@@ -95,9 +95,9 @@ class TtroAlertPage: UIView {
         messageLabel.font = UIFont.TtroFonts.light(size: 20).font
         messageLabel.baselineAdjustment = .alignCenters
         stackView.addArrangedSubview(messageLabel)
-        messageLabel <- [
+        messageLabel.easy.layout([
             Width(*0.9).like(stackView)
-        ]
+        ])
         messageLabel.adjustsFontSizeToFitWidth = true
         
         messageLabel.text = message
@@ -127,10 +127,10 @@ class TtroAlertPage: UIView {
         addSeparator()
         stackView.addArrangedSubview(button)
         
-        button <- [
+        button.easy.layout([
             Height(*0.2).like(self),
             Width().like(stackView)
-        ]
+        ])
         
         
     }
@@ -139,10 +139,10 @@ class TtroAlertPage: UIView {
         let lineView = UIView()
         lineView.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.2)
         stackView.addArrangedSubview(lineView)
-        lineView <- [
+        lineView.easy.layout([
             Height(0.5),
             Width().like(stackView)
-        ]
+        ])
     }
 
     /*

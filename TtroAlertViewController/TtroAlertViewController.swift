@@ -97,18 +97,18 @@ public class TtroAlertViewController: UIViewController {
         let backBlurView = APCustomBlurView(withRadius: 2)
         backBlurView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(backBlurView)
-        backBlurView <- Edges()
+        backBlurView.easy.layout(Edges())
         
         let r2 = r + 1
         
         let alertBackCircle = UIView()
         alertBackCircle.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(alertBackCircle)
-        alertBackCircle <- [
+        alertBackCircle.easy.layout([
             Center(),
             Width(2*(r2)),
             Height().like(alertBackCircle , .width)
-        ]
+        ])
         alertBackCircle.layer.cornerRadius = r2
         alertBackCircle.layer.borderWidth = 2
         alertBackCircle.layer.borderColor = UIColor.TtroColors.white.color.cgColor
@@ -128,7 +128,7 @@ public class TtroAlertViewController: UIViewController {
         //blurView.backgroundColor = UIColor.orange.withAlphaComponent(0.5)
         //blurView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(blurView)
-        blurView <- Edges()
+        blurView.easy.layout(Edges())
         let maskShape3 = CAShapeLayer()
         maskShape3.path = getCanvasPath(view.center, r: r, h: h, alpha: alpha)
         maskShape3.fillRule = kCAFillRuleEvenOdd;
@@ -145,11 +145,11 @@ public class TtroAlertViewController: UIViewController {
         alertCircle.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(alertCircle)
         
-        alertCircle <- [
+        alertCircle.easy.layout([
             Center(),
             Width(2*(r2)),
             Height().like(alertCircle , .width)
-        ]
+        ])
         alertCircle.layer.cornerRadius = r2
         alertCircle.layer.borderWidth = 2
         alertCircle.layer.borderColor = alertBackCircle.layer.borderColor
@@ -161,12 +161,12 @@ public class TtroAlertViewController: UIViewController {
         alertPage = UIView()
         alertPage.translatesAutoresizingMaskIntoConstraints = false
         view.insertSubview(alertPage, aboveSubview: alertBackCircle)
-        alertPage <- [
+        alertPage.easy.layout([
             CenterX(origin.x + w/2 - view.center.x),
             //CenterY(origin.y - view.center.y),
             Width(w),
             Height(2*h),
-        ]
+        ])
         alertPage.backgroundColor = UIColor.orange
         initialYConstraintConstant = origin.y + h - view.center.y
         alertPageYConstraint = alertPage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: initialYConstraintConstant)
@@ -178,12 +178,12 @@ public class TtroAlertViewController: UIViewController {
         setAlertPageForAnimation()
         
         pageCopy = TtroAlertPage(title: title, message: message, type: type, superView: alertPage)
-        pageCopy <- [
+        pageCopy.easy.layout([
             Height(h*(1.2)),
             Width().like(alertPage),
             Top(),
             CenterX(),
-        ]
+        ])
         pageCopy.alpha = 0
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.onPanningDownward(sender:)))
@@ -302,22 +302,24 @@ extension TtroAlertViewController : UIViewControllerTransitioningDelegate {
     func setAlertPageForAction(){
         page.removeFromSuperview()
         view.addSubview(page)
-        page <- [
+        page.easy.layout([
             Height(h*(1.2)),
             Width().like(alertPage),
             Top().to(alertPage, .top),
             CenterX().to(alertPage),
-        ]    }
+        ])
+        
+    }
     
     func setAlertPageForAnimation(){
         page.removeFromSuperview()
         alertPage.addSubview(page)
-        page <- [
+        page.easy.layout([
             Height(h*(1.2)),
             Width().like(alertPage),
             Top(),
             CenterX(),
-        ]
+        ])
     }
 }
 
