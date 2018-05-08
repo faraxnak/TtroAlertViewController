@@ -88,11 +88,12 @@ public class TtroAlertViewController: UIViewController {
         
         frontView = delegate.getFrontView()
         print(frontView.frame)
-        frontView.backgroundColor = UIColor.orange
+//        frontView.backgroundColor = UIColor.orange
         initElements(title!, message: message, type: type)
     }
     
     func initElements(_ title : String, message : String, type : TtroAlertType){
+        view.backgroundColor = UIColor.clear
         
         let backBlurView = APCustomBlurView(withRadius: 2)
         backBlurView.translatesAutoresizingMaskIntoConstraints = false
@@ -115,7 +116,7 @@ public class TtroAlertViewController: UIViewController {
         alertBackCircle.backgroundColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
         
         view.addSubview(frontView)
-        view.layoutIfNeeded()
+//        view.layoutIfNeeded()
         
         let maskShape = CAShapeLayer()
         maskShape.path = getCanvasPath(view.center, r: r, h: h, alpha: alpha)
@@ -158,6 +159,7 @@ public class TtroAlertViewController: UIViewController {
         maskShape2.fillRule = kCAFillRuleEvenOdd
         alertCircle.layer.mask = maskShape2
         
+        
         alertPage = UIView()
         alertPage.translatesAutoresizingMaskIntoConstraints = false
         view.insertSubview(alertPage, aboveSubview: alertBackCircle)
@@ -167,7 +169,6 @@ public class TtroAlertViewController: UIViewController {
             Width(w),
             Height(2*h),
         ])
-        alertPage.backgroundColor = UIColor.orange
         initialYConstraintConstant = origin.y + h - view.center.y
         alertPageYConstraint = alertPage.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: initialYConstraintConstant)
         alertPageYConstraint.isActive = true
@@ -194,8 +195,12 @@ public class TtroAlertViewController: UIViewController {
         
         switch type {
         case .okAlert:
-            addAction("Ok", style: TtroAlertButtonType.default, handler: {
-                self.dismiss(animated: true, completion: nil)
+            addAction("Ok", style: TtroAlertButtonType.default, handler: { [weak self] in
+                if let navigationController = self?.navigationController {
+                    navigationController.popViewController(animated: true)
+                } else {
+                    self?.dismiss(animated: true, completion: nil)
+                }
             })
         default:
             break

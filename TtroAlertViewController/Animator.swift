@@ -12,15 +12,15 @@ public protocol TtroAlertViewControllerTransitionAnimationDelegate : class {
     func isPresentedOnTabbar(fromVC viewController : UIViewController) -> Bool
 }
 
-class TtroAlertViewControllerShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+public class TtroAlertViewControllerShowTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
     
     var delegate : TtroAlertViewControllerTransitionAnimationDelegate!
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         // 1
         guard let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from),
             let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) as? TtroAlertViewController else {
@@ -30,9 +30,13 @@ class TtroAlertViewControllerShowTransitionAnimation: NSObject, UIViewController
         //2
         let bounds = UIScreen.main.bounds
         print(fromVC)
-        if delegate.isPresentedOnTabbar(fromVC: fromVC) {
-            toVC.setFrontViewMask()
+        if delegate == nil {
+            delegate = toVC
         }
+//        if delegate.isPresentedOnTabbar(fromVC: fromVC) {
+//            toVC.setFrontViewMask()
+//        }
+        toVC.setFrontViewMask()
         containerView.addSubview(toVC.view)
         toVC.alertPageYConstraint.constant += bounds.size.height
         
@@ -48,24 +52,26 @@ class TtroAlertViewControllerShowTransitionAnimation: NSObject, UIViewController
         }, completion: {
             finished in
             
+//            containerView.addSubview(toVC.view)
             toVC.setAlertPageForAction()
             //toVC.alertPage.hidden = false
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            containerView.insertSubview(fromVC.view, belowSubview: toVC.view)
         })
         
     }
 }
 
-class TtroAlertViewControllerDismissTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
+public class TtroAlertViewControllerDismissTransitionAnimation: NSObject, UIViewControllerAnimatedTransitioning {
     
-    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
+    public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
     
-    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+    public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         // 1
         guard let fromVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as? TtroAlertViewController,
-            let _ = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else {
+            let toVC = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to) else {
                 return
         }
         let containerView = transitionContext.containerView
@@ -83,6 +89,7 @@ class TtroAlertViewControllerDismissTransitionAnimation: NSObject, UIViewControl
             fromVC.alertPageYConstraint.constant += bounds.size.height
             containerView.layoutIfNeeded()
         }) { (finished) in
+            containerView.addSubview(toVC.view)
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
         
