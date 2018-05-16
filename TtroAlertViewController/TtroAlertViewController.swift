@@ -238,7 +238,7 @@ public class TtroAlertViewController: UIViewController {
     
     var isPanning = false
     var isAnimatingPan = false
-    func onPanningDownward(sender : UIPanGestureRecognizer){
+    @objc func onPanningDownward(sender : UIPanGestureRecognizer){
         let displacement = sender.translation(in: page)
         let velocity = sender.velocity(in: page)
         if (sender.state == .ended){
