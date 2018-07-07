@@ -64,7 +64,12 @@ class TtroAlertPage: UIView {
         stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
-        stackView.easy.layout(Edges())
+        stackView.easy.layout([
+            Top(10),
+            Left(),
+            Right(),
+            Bottom()
+            ])
         stackView.alignment = .center
         stackView.distribution = .fillProportionally
         stackView.axis = .vertical
@@ -78,11 +83,20 @@ class TtroAlertPage: UIView {
         titleLabel.lineBreakMode = .byWordWrapping
         stackView.addArrangedSubview(titleLabel)
         titleLabel.textColor = UIColor.TtroColors.darkBlue.color
-        titleLabel.font = UIFont.TtroFonts.regular(size: 20).font
+        titleLabel.font = UIFont.TtroPayWandFonts.regular2.font
         titleLabel.baselineAdjustment = .alignCenters
         titleLabel.easy.layout([
             Width(*0.9).like(stackView)
         ])
+//        titleLabel.text = title
+        let paragraphStyle1 = NSMutableParagraphStyle()
+        paragraphStyle1.lineSpacing = 5 // Whatever line spacing you want in points
+        paragraphStyle1.alignment = .center
+        let text1 = NSAttributedString(string: title,
+                                      attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle1])
+        //            amountInUserCurrencyLabel.text = amountInUserCurrencyString
+        titleLabel.attributedText = text1
+
 //        titleLabel <- [
 //            Height(*0.2).like(self)
 //        ]
@@ -92,7 +106,7 @@ class TtroAlertPage: UIView {
         messageLabel.numberOfLines = 5
         messageLabel.lineBreakMode = .byWordWrapping
         messageLabel.textColor = UIColor.TtroColors.darkBlue.color.withAlphaComponent(0.7)
-        messageLabel.font = UIFont.TtroFonts.light(size: 20).font
+        messageLabel.font = UIFont.TtroPayWandFonts.light2.font
         messageLabel.baselineAdjustment = .alignCenters
         stackView.addArrangedSubview(messageLabel)
         messageLabel.easy.layout([
@@ -100,7 +114,14 @@ class TtroAlertPage: UIView {
         ])
         messageLabel.adjustsFontSizeToFitWidth = true
         
-        messageLabel.text = message
+//        messageLabel.text = message
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 3 // Whatever line spacing you want in points
+        paragraphStyle.alignment = .center
+        let text = NSAttributedString(string: message,
+                                      attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle])
+        //            amountInUserCurrencyLabel.text = amountInUserCurrencyString
+        messageLabel.attributedText = text
         
 //        let paragraphStyle = NSMutableParagraphStyle()
 //        paragraphStyle.alignment = .justified

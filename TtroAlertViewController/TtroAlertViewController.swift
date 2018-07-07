@@ -30,10 +30,12 @@ public class TtroAlertViewController: UIViewController {
     var page : TtroAlertPage!
     var pageCopy : TtroAlertPage!
     
-    let r : CGFloat = 120 - 2
+    public var shouldHideStatusBar : Bool = false
+    
+    let r : CGFloat = 140 - 2
     let alpha : CGFloat = 0.91
     
-    let h : CGFloat = 220
+    let h : CGFloat = 250
     var w : CGFloat {
         get {
             return 2 * r * sin(alpha)
@@ -79,7 +81,17 @@ public class TtroAlertViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    open override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if (UIApplication.shared.statusBarFrame.height <= 20 && shouldHideStatusBar){
+            UIApplication.shared.isStatusBarHidden = true
+        }
+    }
     
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        UIApplication.shared.isStatusBarHidden = false
+    }
 
     public override func viewDidLoad() {
         super.viewDidLoad()
@@ -193,18 +205,19 @@ public class TtroAlertViewController: UIViewController {
         
         view.layoutIfNeeded()
         
-        switch type {
-        case .okAlert:
-            addAction("Ok", style: TtroAlertButtonType.default, handler: { [weak self] in
-                if let navigationController = self?.navigationController {
-                    navigationController.popViewController(animated: true)
-                } else {
-                    self?.dismiss(animated: true, completion: nil)
-                }
-            })
-        default:
-            break
-        }
+//        switch type {
+//        case .okAlert:
+//            addAction("Ok", style: TtroAlertButtonType.default, handler: { [weak self] in
+//                if let navigationController = self?.navigationController {
+//                    
+//                    navigationController.popViewController(animated: true)
+//                } else {
+//                    self?.dismiss(animated: true, completion: nil)
+//                }
+//            })
+//        default:
+//            break
+//        }
         
     }
     
