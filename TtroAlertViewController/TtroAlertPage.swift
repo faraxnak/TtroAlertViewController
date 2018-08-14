@@ -21,17 +21,21 @@ public enum TtroAlertButtonType {
     case cancel
 }
 
+public enum TTroAlertState {
+    case error
+    case success
+    case warning
+}
+
 class TtroAlertPage: UIView {
     
+    fileprivate var titleLabel : UILabel!
+    fileprivate var messageLabel : UILabel!
     
-    
-    var titleLabel : UILabel!
-    var messageLabel : UILabel!
-    
-    var stackView : UIStackView!
+    fileprivate var stackView : UIStackView!
     var firstButtonInView : Bool = true
     
-    convenience init(title : String, message : String, type : TtroAlertType, superView : UIView, constraintView : UIView? = nil) {
+    convenience init(message : String, type : TtroAlertType, state : TTroAlertState, superView : UIView, constraintView : UIView? = nil) {
         self.init(frame : CGRect.zero)
         translatesAutoresizingMaskIntoConstraints = false
         superView.addSubview(self)
@@ -49,7 +53,7 @@ class TtroAlertPage: UIView {
             ])
         }
         
-        initElements(title, message: message)
+        initElements(state, message: message)
     }
     
     override init(frame: CGRect) {
@@ -60,7 +64,7 @@ class TtroAlertPage: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func initElements(_ title : String, message : String){
+    func initElements(_ state : TTroAlertState, message : String){
         stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stackView)
@@ -74,28 +78,46 @@ class TtroAlertPage: UIView {
         stackView.distribution = .fillProportionally
         stackView.axis = .vertical
         
-        layoutIfNeeded()
+        let dummyView = UIView()
+        dummyView.easy.layout(Height(15))
+        stackView.addArrangedSubview(dummyView)
         
-        titleLabel = UILabel()
-        titleLabel.text = title
-        titleLabel.textAlignment = .center
-        titleLabel.numberOfLines = 2
-        titleLabel.lineBreakMode = .byWordWrapping
-        stackView.addArrangedSubview(titleLabel)
-        titleLabel.textColor = UIColor.TtroColors.darkBlue.color
-        titleLabel.font = UIFont.TtroPayWandFonts.regular2.font
-        titleLabel.baselineAdjustment = .alignCenters
-        titleLabel.easy.layout([
-            Width(*0.9).like(stackView)
-        ])
+        var icon : UIImage?
+        switch state {
+        case .error:
+            icon = #imageLiteral(resourceName: "alertBoxError")
+        case .success:
+            icon = #imageLiteral(resourceName: "alertBoxConfirm")
+        case .warning:
+            icon = #imageLiteral(resourceName: "alertBoxWarning")
+        }
+        let iconView = UIImageView(image: icon)
+        iconView.contentMode = .scaleAspectFit
+        iconView.easy.layout([
+            Height(45)
+            ])
+        stackView.addArrangedSubview(iconView)
+        
+//        titleLabel = UILabel()
 //        titleLabel.text = title
-        let paragraphStyle1 = NSMutableParagraphStyle()
-        paragraphStyle1.lineSpacing = 5 // Whatever line spacing you want in points
-        paragraphStyle1.alignment = .center
-        let text1 = NSAttributedString(string: title,
-                                      attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle1])
-        //            amountInUserCurrencyLabel.text = amountInUserCurrencyString
-        titleLabel.attributedText = text1
+//        titleLabel.textAlignment = .center
+//        titleLabel.numberOfLines = 2
+//        titleLabel.lineBreakMode = .byWordWrapping
+//        stackView.addArrangedSubview(titleLabel)
+//        titleLabel.textColor = UIColor.TtroColors.darkBlue.color
+//        titleLabel.font = UIFont.TtroPayWandFonts.regular2.font
+//        titleLabel.baselineAdjustment = .alignCenters
+//        titleLabel.easy.layout([
+//            Width(*0.9).like(stackView)
+//        ])
+////        titleLabel.text = title
+//        let paragraphStyle1 = NSMutableParagraphStyle()
+//        paragraphStyle1.lineSpacing = 5 // Whatever line spacing you want in points
+//        paragraphStyle1.alignment = .center
+//        let text1 = NSAttributedString(string: title,
+//                                      attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle1])
+//        //            amountInUserCurrencyLabel.text = amountInUserCurrencyString
+//        titleLabel.attributedText = text1
 
 //        titleLabel <- [
 //            Height(*0.2).like(self)

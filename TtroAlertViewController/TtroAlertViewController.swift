@@ -30,6 +30,8 @@ public class TtroAlertViewController: UIViewController {
     var page : TtroAlertPage!
     var pageCopy : TtroAlertPage!
     
+    var state : TTroAlertState = .error
+    
     public var shouldHideStatusBar : Bool = false
     
     let r : CGFloat = 140 - 2
@@ -61,12 +63,13 @@ public class TtroAlertViewController: UIViewController {
     
     var dismissHandler : (() -> ())?
     
-    public convenience init(title : String, message : String, type : TtroAlertType) {
+    public convenience init(message : String, type : TtroAlertType, state : TTroAlertState = .error) {
         self.init(nibName : nil, bundle : nil )
         
         self.type = type
-        self.title = title
         self.message = message
+        
+        self.state = state
         
         transitioningDelegate = self
         showTransitionAnimation.delegate = self
@@ -101,10 +104,10 @@ public class TtroAlertViewController: UIViewController {
         frontView = delegate.getFrontView()
         print(frontView.frame)
 //        frontView.backgroundColor = UIColor.orange
-        initElements(title!, message: message, type: type)
+        initElements(message: message, type: type, state: state)
     }
     
-    func initElements(_ title : String, message : String, type : TtroAlertType){
+    func initElements(message : String, type : TtroAlertType, state: TTroAlertState = .error){
         view.backgroundColor = UIColor.clear
         
         let backBlurView = APCustomBlurView(withRadius: 2)
@@ -187,10 +190,10 @@ public class TtroAlertViewController: UIViewController {
         alertPage.layer.cornerRadius = 10
         alertPage.backgroundColor = UIColor.TtroColors.white.color
         
-        page = TtroAlertPage(title: title, message: message, type: type, superView: alertPage)
+        page = TtroAlertPage(message: message, type: type, state: state, superView: alertPage)
         setAlertPageForAnimation()
         
-        pageCopy = TtroAlertPage(title: title, message: message, type: type, superView: alertPage)
+        pageCopy = TtroAlertPage(message: message, type: type, state: state, superView: alertPage)
         pageCopy.easy.layout([
             Height(h*(1.2)),
             Width().like(alertPage),
