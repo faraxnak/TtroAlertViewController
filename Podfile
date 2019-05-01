@@ -7,6 +7,7 @@ target 'TtroAlertViewController' do
 
   # Pods for TtroAlertViewController
   pod 'EasyPeasy'
+  pod 'PayWandModelProtocols', :path => '../PayWandModelProtocols/'
   pod 'PayWandBasicElements', :path => '../PayWandBasicElements/'
 
   target 'TtroAlertViewControllerTests' do

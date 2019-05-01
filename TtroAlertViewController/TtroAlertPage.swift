@@ -159,6 +159,7 @@ class TtroAlertPage: UIView {
         button.actionHandle(controlEvents: .touchUpInside, ForAction: onTouch)
         button.setTitleColor(UIColor.TtroColors.lightBlue.color, for: UIControlState())
         button.titleLabel?.font = UIFont.TtroPayWandFonts.light3.font
+        button.titleLabel?.adjustsFontSizeToFitWidth = true
         
         self.addSubview(button)
         button.translatesAutoresizingMaskIntoConstraints = false
